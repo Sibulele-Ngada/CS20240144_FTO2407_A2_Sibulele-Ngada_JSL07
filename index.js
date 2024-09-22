@@ -4,16 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const certificateContent = document.getElementById('certificateContent');
     const closeModal = document.querySelector('.close');
   
-    // Hide the modal initially
-    modal.style.display = 'none';
-  
     cardForm.addEventListener('submit', function (e) {
       e.preventDefault();
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = ;
-      const courseNameInput = ; 
+      const personalMessageInput = document.getElementById('personalMessage');
+      const courseNameInput = document.getElementById('courseName'); 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
