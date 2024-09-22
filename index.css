@@ -103,6 +103,7 @@ img {
 
 .close {
   color: #dc7f5f;
+  cursor: pointer;
 }
 
 /* Adding a fancy border to the certificate content */
