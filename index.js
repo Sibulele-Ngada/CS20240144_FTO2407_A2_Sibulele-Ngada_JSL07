@@ -16,15 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
       const personalMessage = personalMessageInput.value;
       const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
   
-      if (studentName.trim() === '' || personalMessage.trim() === '') {
-        alert('Please fill in all fields');
-        return;
-      }
-  
       // 🚨 Generate certificate content dynamically
-      certificateContent. = `
-      <h3>${studentName}</h3>
-    `;
+      certificateContent.innerHTML = `
+        <h2>Certificate of Achievement</h2>
+        <p>This is to certify that</p>
+        <h3>${studentName}</h3>
+        <p>has almost completed the</p>
+        <h4>${courseName} Course</h4>
+        <p>with legendary perseverance and world-class bad-assery for never giving up 🏆</p>
+        <img src="./logo.png" alt="Seal">
+        <p>${personalMessage}</p>
+      `;
     
       //  Display the modal
       modal.style.display = 'block';
@@ -36,8 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.('', function () {
-      
-    });
+    
   });
   
