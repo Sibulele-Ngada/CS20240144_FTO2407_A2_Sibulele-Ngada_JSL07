@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <p>has almost completed the</p>
         <h4>${courseName} Course</h4>
         <p>with legendary perseverance and world-class bad-assery for never giving up 🏆</p>
-        <img src="./logo.png" alt="Seal">
+        <img src="./logo.png" alt="Seal" w>
         <p>${personalMessage}</p>
       `;
     
@@ -38,6 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    
+    closeModal.onclick = () => modal.style.display = 'none';
   });
   
