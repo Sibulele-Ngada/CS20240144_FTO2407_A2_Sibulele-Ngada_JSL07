@@ -42,6 +42,7 @@ button:hover {
 /* Certificate Modal */
 
 .modal {
+    display: none; /* Hide by default*/ 
     max-width: 800px;
     margin: 0 auto; /* Center horizontally */
     position: fixed;
