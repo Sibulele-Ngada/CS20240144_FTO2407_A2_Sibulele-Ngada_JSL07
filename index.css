@@ -95,6 +95,12 @@ h1, .modal-content h2, .modal-content p {
   color: #5d5f5e;
 }
 
+/* Resize seal image */
+img {
+  width: 300px;
+  height: 80px;
+}
+
 .close {
   color: #dc7f5f;
 }
